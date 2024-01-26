@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/fontawesome.min.css" integrity="sha512-d0olNN35C6VLiulAobxYHZiXJmq+vl+BGIgAxQtD5+kqudro/xNMvv2yIHAciGHpExsIbKX3iLg+0B6d0k4+ZA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <title>Ms Word</title>
+</head>
+<body>
+   <div class="container">
+    <div class="tittle-bar">
+        <div class="copy"><i class="fa-sharp fa-solid fa-reply"></i>
+            <i class="fa-sharp fa-solid fa-caret-down"></i><i class="fa-solid fa-arrow-rotate-left"></i>
+            <i class="fa-solid line fa-grip-lines-vertical"></i>
+            <i class="fa-regular fa-floppy-disk"></i>
+            <i class="fa-sharp fa-solid fa-caret-down"></i></div>
+        <div class="ms-word">Document1- Word</div>
+        <div class="cut-sign"><button>Sign-in</button>
+           </div>
+    </div>
+    <div class="menu-bar">
+        <div class="file menu-item">File</div>
+        <div class="home menu-item selected">Home</div>
+        <div class="insert menu-item">Insert</div>
+        <div class="desgin menu-item">Desgin</div>
+        <div class="layout menu-item">Layout</div>
+        <div class="reference menu-item">Reference</div>
+        <div class="mailing menu-item">Mailings</div>
+        <div class="review menu-item">Review</div>
+        <div class="view menu-item">View</div>
+        <div class="help menu-item">Help</div>
+        <div class="bulb menu-item"></div>
+        <div class="hint menu-item" style="font-size: 13px;"> <i class="fa-regular fa-lightbulb"></i>Tell me what you want to do</div>
+        <div class="share menu-item"><i class="fa-solid fa-user-plus"></i> &nbsp;Share</div>
+    </div>
+    <div class="menu-icon-bar paste ">
+        <!-- paste -->
+        <div class="clip">
+            <div class="imgpast">
+        <img src="img/paste-icon.png" class="nav-item">
+        <p class="nav-item"><b>Paste</b></p>
+       <div class="nav-item"><i class="fa-solid fa-sort-down"></i></div>
+    </div>
+    <div class="icon">
+        <div class="cut">
+    <i class="fa-sharp fa-solid fa-scissors fa-rotate-270" style="color: #bec3cb;"></i>&nbsp;<b>Cut</b></div>
+    <div class="copyicon"><i class="fa-regular fa-copy fa-lg"></i>&nbsp;<b>Copy</b></div>
+    <div class="format"><img src="img/494244.image0-removebg-preview.png" style="width: 20px;">&nbsp;Format Painter
+    <br>
+       <h6 style="font-size: 12px;"><b>Clipboard</b> <i style="margin-left: 40px; margin-top: 7px; color: #bec3cb;" class="fa-solid fa-arrow-up-right-from-square fa-rotate-90"></i></h6></div>
+</div>
+    </div>
+                     <!-- *****************Font group*********************************** -->
+                     <div class="font-box">
+                       <select class="selector font-family-selector" style="font-size: 12px; cursor: pointer;" >
+                        <option value="" style="font-size: 12px;">Calibri (Body)</option>
+                       </select> 
+                       <select onchange="handleOnChangeEvent()" id="fontSize" class="number click" style="font-size: 12px;">
+                        <option value="11">11</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="14">14</option>
+                        <option value="16">16</option>
+                        <option value="19">18</option>
+                        <option value="20">20</option>
+                        <option value="22">22</option>
+                        <option value="24">24</option>
+                        <option value="26">26</option>
+                        <option value="28">28</option>
+                        <option value="36">36</option>
+                        <option value="48">48</option>
+                        <option value="72">72</option>
+                       </select>
+                       <b style="font-size: 15px; cursor: pointer;">A <i style="margin-left: 0; color: #083a85;" class="fa-solid fa-caret-up fa-2xs"></i></b>
+                       <b style="font-size: 15px; border-right: 1px solid #bec3cb; cursor: pointer;">A <i style="margin-left: 0; color: #083a85;" class="fa-solid fa-caret-down fa-2xs"></i></b>
+                        <b style="font-size: 15px; border-right: 1px solid #bec3cb; cursor: pointer;">Aa
+                            <i style="margin-left: 0; cursor: pointer;" class="fa-solid fa-caret-down fa-2xs"></i> </b>
+                            <b style="font-size: 15px;">A<i class="fa-solid fa-eraser" style="color: #c34b63; margin-left: 0; cursor: pointer;"></i></b>
+                       <div class="boldbox">
+                        <b onclick="boldElement()">B</b><img src="img/59377.png" style="width: 10px;" onclick="italicFont()">&nbsp;
+                        <u onclick="underElement()" style="font-size: 18px;">u</u><i style="margin-left: 0;" class="fa-solid fa-caret-down fa-2xs"></i>
+                        <strike>abc</strike>&nbsp;<b>X <sub style="color: #083a85;">2</sub></b>&nbsp;
+                        <b class="bod">X <sup style="color: #083a85;">2</sup></b>&nbsp; <b class="shade">A
+                        <i style="margin-left: 0; color: black;" class="fa-solid fa-caret-down fa-2xs"></i>
+                        </b>
+                        <b style="border-bottom: 5px solid yellow;">
+                        <i style="margin-left: 0;" class="fa-solid fa-paintbrush fa-2xs"></i></b>
+                        <i style="margin-left: 0;" class="fa-solid fa-caret-down fa-2xs"></i>
+                         <b style="border-bottom: 5px solid red;">A</b>
+                         <i style="margin-left: 0;" class="fa-solid fa-caret-down fa-2xs"></i>
+                        
+                      <h6 class="font-h"><b>Font</b><i style="margin-left: 129px; margin-top: 4px; color: #bec3cb;" class="fa-solid fa-arrow-up-right-from-square fa-rotate-90"></i></h6>
+                    </div>
+                     </div>
+                      
+                      <!-- *******************Para*********************** -->
+                    <div class="para">
+                        <i class="fa-sharp fa-solid fa-list-ul " style="color: rgb(24, 23, 23); margin-left: 5px; margin-top: 10px;"></i>
+                        <i style="margin-left: 2px; color: black;" class="fa-solid fa-caret-down fa-2xs"></i>
+                        <i style="margin-left: 2px; color:rgb(24, 23, 23) ;" class="fa-sharp fa-solid fa-list-ol "></i>
+                        <i style="margin-left: 2px; color: black;" class="fa-solid fa-caret-down fa-2xs"></i>
+                        <i style="margin-left: 2px; color: rgb(24, 23, 23);  border-right: 1px solid #bec3cb;" class="fa-solid fa-bars-staggered ">
+                        <i style="margin-left: 1px; color: black;" class="fa-solid fa-caret-down fa-2xs"></i>&nbsp;</i>
+                        <i style="margin-left: 3px; border-top:2px solid black ; border-bottom: 2px solid black; color: black; " class="fa-solid fa-caret-left fa-2xs ">
+                        <i style="margin-left: 0;" class="fa-solid fa-grip-lines"></i></i>
+                        <i style="margin-left: 3px; border-top:2px solid black ; border-bottom: 2px solid black; color: black; " class="fa-solid fa-caret-right fa-2xs ">
+                            <i style="margin-left: 0;" class="fa-solid fa-grip-lines"></i></i>&nbsp;
+                            <b style="color: #083a85; border-left: 1px solid #bec3cb; border-right: 1px solid #bec3cb;">A <i style="margin-left: 0;" class="fa-solid fa-arrow-down fa-2xs"></i></b>
+                            <i style="margin-left: 0; color: rgb(24, 23, 23);" class="fa-solid fa-paragraph fa-2xs"></i>
+                            <div class="align">
+                                <i style="margin-left: 0;" class="fa-solid fa-align-left " onclick="alignLeft()"></i> 
+                                <i style="margin-left: 6px;" class="fa-solid fa-align-center" onclick="alignCenter()"></i>
+                                <i style="margin-left: 6px;" class="fa-solid fa-align-right" onclick="alignRight()" ></i>
+                                <i style="margin-left: 3px; border-right: 1px solid #bec3cb;" class="fa-solid fa-align-justify" onclick="alignJustify()">&nbsp; &nbsp;</i>
+                            <i style="margin-left: 0; border-right: 1px solid #bec3cb;" class="fa-solid fa-arrow-down-up-across-line">
+                             <i style="margin-left: 2px; color: black;" class="fa-solid fa-caret-down fa-2xs"></i>&nbsp;</i>
+                             <i style="margin-left: 0; border-bottom: 6px solid #083a85;" class="fa-solid fa-fill-drip"></i>
+                             <i style="margin-left: 2px; color: black;" class="fa-solid fa-caret-down fa-2xs"></i>
+                             <i style="margin-left: 8px; border-bottom: 2px solid  #000;" class="fa-solid fa-border-none"></i>
+                             <i style="margin-left: 2px; color: black;" class="fa-solid fa-caret-down fa-2xs"></i>
+                      <h6 class="font-p"><b>Paragraph</b><i style="margin-left: 80px; margin-top: 5px; color: #bec3cb;" class="fa-solid fa-arrow-up-right-from-square fa-rotate-90"></i></h6>
+                            </div>
+                        </div>
+                        <div class="style">
+                            <div class="alpha">
+                           <div class="nor">    
+                             <p style="font-size: 17px;  margin-top: 5px; margin-bottom: 10px; margin-left: 0;"><b>AaBbCc</b></p> 
+                        <i style="margin-left: 0; color: rgb(24, 23, 23);" class="fa-solid fa-paragraph fa-2xs"></i>Normal
+                        </div>
+                        <div class="nospa">
+                            <p style="margin-top: 5px; margin-bottom: 10px; margin-left: 2px;">AaBbCc</p>
+                        <i style="margin-left: 0; color: rgb(24, 23, 23);" class="fa-solid fa-paragraph fa-2xs"></i>No Spac...
+                        </div>
+                        <div class="head1">
+                            <p style="margin-top: 5px; margin-bottom: 10px; margin-left: 0; color: #083a85;">AaBbC</p>
+                             <p style="margin-left: 0;">Heading 1</p>
+                        </div>
+                        <div class="titl">
+                            <p style="margin-top: 0; margin-bottom: 10px; margin-left: 0; font-size: 20px;"><b>AaB</b></p>
+                            <p style="margin-left: 10px; margin-top: 0;">Title</p>
+                        </div>
+                        <div class="subelement">
+                            <p style="margin-top: 0; margin-bottom: 10px; margin-left: 0; font-size: 20px;"><i>AaB</i></p>
+                            <p style="margin-left: 5px; margin-top: 0; font-size: 11px;">SubltleEm..</p>
+
+                        </div>
+                            </div>
+                      <h6 class="font-s"><b>Styles</b><i style="margin-left: 180px; margin-top: 3px; color: #bec3cb;" class="fa-solid fa-arrow-up-right-from-square fa-rotate-90"></i></h6>
+                        </div>
+                        <div class="edit">
+                            <div class="find">
+                                <i style="color: #083a85; margin-left: 15px;" class="fa-solid fa-magnifying-glass fa-rotate-90"></i>&nbsp;<span>Find </span>
+                                    <i style="margin-left: 0; color: #000;" class="fa-solid fa-caret-down fa-2xs"></i>
+                             
+                                <div class="repl"><i style="margin-left: 15px; color: #083a85;" class="fa-solid fa-rotate"></i>
+                                Replace</div>
+                                <div class="sle">
+                                    <i style="margin-left: 17px;" class="fa-solid fa-arrow-pointer"></i>Select
+                                    <i style="margin-left: 0; color: #000;" class="fa-solid fa-caret-down fa-2xs"></i>
+                                    <h6 class="font-e"><b>Editing</b><i style="margin-left: 14px; margin-top: 7px; color: #bec3cb;" class="fa-solid fa-arrow-up-right-from-square fa-rotate-90"></i></h6>
+
+                                </div>
+
+                            </div>
+                         
+                        </div>
+                        <div class="blank">
+                            <i style="color: #242424; margin-top: 70px;" class="fa-solid fa-angle-up"></i>
+                        </div>
+                      
+    </div>
+    <div class="formula-bar"></div>
+    <div class="data-container">
+        <textarea name="" id="page" ></textarea>
+    </div>
+        <div class="row-name-container"></div>
+        <div class="column-name-container"></div>
+        <div class="input-cell-container"></div>
+    </div>
+    <div class="sheet-bar">
+        <div class="scroller">
+        </div>
+    </div>
+   </div>
+   <script src="code.js"></script>
+</body>
+</html>
